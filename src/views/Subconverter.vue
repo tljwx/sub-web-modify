@@ -28,7 +28,7 @@
               </el-form-item>
               <el-form-item label="后端地址:">
                 <el-select v-model="form.customBackend" allow-create filterable @change="selectChanged"
-                  placeholder="https://subapi.kimbo.de5.net" style="width: 100%">
+                  placeholder="https://subapi2025.zeabur.app" style="width: 100%">
                   <el-option v-for="(v, k) in options.customBackend" :key="k" :label="k" :value="v"></el-option>
                 </el-select>
               </el-form-item>
@@ -338,7 +338,8 @@ export default {
           "suo.yt": "https://suo.yt/short",
         },
         customBackend: {
-          "MY用后端【vless reality+hy1+hy2】": "https://subapi.kimbo.de5.net",
+          "MY用后端A【vless reality+hy1+hy2】": "https://subapi2025.zeabur.app",
+          "MY用后端B【vless reality+hy1+hy2】": "https://subapi.kimbo.de5.net",
           "CM负载均衡后端【vless reality+hy1+hy2】": "https://subapi.cmliussss.net",
           "CM应急备用后端【vless reality+hy1+hy2】": "https://subapi.fxxk.dedyn.io",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
@@ -348,6 +349,7 @@ export default {
           "sub-web作者提供": "https://api.wcc.best",
         },
         backendOptions: [
+          { value: "https://subapi2025.zeabur.app" },
           { value: "https://subapi.kimbo.de5.net" },
           { value: "https://subapi.cmliussss.net" },
           { value: "https://subapi.fxxk.dedyn.io" },
@@ -788,7 +790,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://subapi.kimbo.de5.net" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://subapi2025.zeabur.app" : this.getUrlParam(),
         shortType: "https://v1.mk/short",
         remoteConfig: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online.ini",
         excludeRemarks: "",
@@ -1312,6 +1314,7 @@ export default {
   }
 };
 </script>
+
 
 
 
